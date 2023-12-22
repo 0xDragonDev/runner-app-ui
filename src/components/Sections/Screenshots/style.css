@@ -1,0 +1,108 @@
+#screenshots .swiper {
+  width: 1120px;
+  margin-left: calc(50% - 560px);
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+@media (min-width: 768px) {
+  #screenshots .swiper {
+    width: 720px;
+    margin-left: calc(50% - 360px);
+  }
+}
+
+@media (min-width: 1024px) {
+  #screenshots .swiper {
+    width: 920px;
+    margin-left: calc(50% - 460px);
+  }
+}
+
+@media (min-width: 1920px) {
+  #screenshots .swiper {
+    width: 1200px;
+    margin-left: calc(50% - 600px);
+  }
+}
+
+.swiper-slide img {
+  user-select: none;
+  display: block;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 36px;
+  height: 5px;
+  border-radius: 9999px;
+  background-color: black;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #2669e5;
+}
+
+#screenshots .swiper-slide-next::before {
+  position: absolute;
+  content: "";
+  top: -16px;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 32px);
+  background-image: url("assets/img/border-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media (min-width: 768px) {
+  #screenshots .swiper-slide-next::before {
+    top: -8px;
+    left: -12px;
+    width: calc(100% + 24px);
+    height: calc(100% + 16px);
+  }
+}
+
+@media (min-width: 1024px) {
+  #screenshots .swiper-slide-next::before {
+    top: -12px;
+    left: -16px;
+    width: calc(100% + 32px);
+    height: calc(100% + 24px);
+  }
+}
+
+@media (min-width: 1920px) {
+  #screenshots .swiper-slide-next::before {
+    top: -16px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 32px);
+  }
+}
+
+#screenshots .swiper-button-prev,
+#screenshots .swiper-button-next {
+  width: 30px;
+  height: 3px;
+  overflow: visible;
+  background-color: #f63594;
+}
+
+#screenshots .swiper-button-prev::after,
+#screenshots .swiper-button-next::after {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f63594;
+}
+
+#screenshots .swiper-button-prev::after {
+  position: absolute;
+  left: -2px;
+}
+
+#screenshots .swiper-button-next::after {
+  position: absolute;
+  right: -2px;
+}

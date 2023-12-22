@@ -1,0 +1,42 @@
+#testimonials .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+#testimonials .swiper-button-prev,
+#testimonials .swiper-button-next {
+  top: unset;
+  bottom: 12px;
+  width: 24px;
+  height: 1.5px;
+  overflow: visible;
+  background-color: #f63594;
+}
+
+#testimonials .swiper-button-prev::after,
+#testimonials .swiper-button-next::after {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f63594;
+}
+
+#testimonials .swiper-button-prev {
+  left: 50%;
+  transform: translateX(-150%);
+}
+
+#testimonials .swiper-button-next {
+  right: 50%;
+  transform: translateX(150%);
+  text-align: right;
+}
+
+#testimonials .swiper-button-prev::after {
+  left: -1px;
+}
+
+#testimonials .swiper-button-next::after {
+  right: -1px;
+}
